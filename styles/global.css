@@ -13,9 +13,11 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  direction: rtl;
 }
 
-.header-list {
+.header-list,
+.nav {
   list-style: none;
   color: black;
   display: -webkit-box;
@@ -27,7 +29,8 @@ a {
   text-align: center;
 }
 
-.header-list a {
+.header-list a,
+.nav a {
   text-decoration: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -35,20 +38,29 @@ a {
   margin: auto 15px;
 }
 
-.header-list a:hover {
+.header-list a:hover,
+.nav a:hover {
   color: #ff324d;
 }
 
-.header-list span {
-  margin: auto 3px;
+.header-list span,
+.nav span {
+  margin: auto 2px;
 }
 
-.header-list li {
+.header-list li,
+.nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=global.css.map */

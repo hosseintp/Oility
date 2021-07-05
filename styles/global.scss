@@ -15,8 +15,10 @@ a {
 
 * {
   box-sizing: border-box;
+  direction: rtl;
 }
-.header-list {
+.header-list,
+.nav {
   list-style: none;
   color: black;
   display: flex;
@@ -33,10 +35,13 @@ a {
     }
   }
   span {
-    margin: auto 3px;
+    margin: auto 2px;
   }
   li {
     display: flex;
     align-items: center;
   }
+}
+.nav {
+  justify-content: flex-start;
 }
