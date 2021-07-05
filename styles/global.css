@@ -14,4 +14,41 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.header-list {
+  list-style: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.header-list a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: black;
+  margin: auto 15px;
+}
+
+.header-list a:hover {
+  color: #ff324d;
+}
+
+.header-list span {
+  margin: auto 3px;
+}
+
+.header-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=global.css.map */

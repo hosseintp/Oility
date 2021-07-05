@@ -16,3 +16,27 @@ a {
 * {
   box-sizing: border-box;
 }
+.header-list {
+  list-style: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  a {
+    text-decoration: none;
+
+    transition: color 0.3s;
+    color: black;
+    margin: auto 15px;
+    &:hover {
+      color: $main-red;
+    }
+  }
+  span {
+    margin: auto 3px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
