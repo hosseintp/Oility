@@ -29,7 +29,7 @@ a {
 
     transition: color 0.3s;
     color: black;
-    margin: auto 15px;
+    margin: auto 10px;
     &:hover {
       color: $main-red;
     }
@@ -44,4 +44,33 @@ a {
 }
 .nav {
   justify-content: flex-start;
+  li {
+    position: relative;
+    &:hover > .drop-menu {
+      opacity: 1;
+      top: 115%;
+      visibility: visible;
+    }
+  }
+  li > .drop-menu {
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(216, 216, 216);
+    opacity: 0;
+    visibility: hidden;
+    min-width: 230px;
+    text-align: right;
+    padding: 8px;
+    border-radius: 3px;
+  }
+}
+.drop-menu li {
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  right: 0;
+  width: 100%;
+  margin: 6px auto;
 }

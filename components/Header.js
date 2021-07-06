@@ -7,64 +7,65 @@ import Logo from "../public/logo.png";
 const Header = () => {
   return (
     <header>
-      <div className="container d-none d-lg-block my-3">
-        <div className="row justify-content-between">
-          <div className="col-6">
-            <div className="d-flex justify-content-start justify-md-content-end">
-              <ul className="header-list">
-                <li>
-                  <a href="#">
-                    <span>
-                      <BiGitCompare />
-                    </span>
-                    <span>مقایسه ها</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>
-                      <MdFavorite />
-                    </span>
-                    <span>علاقه مندی ها</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>
-                      <BsFillPersonFill />
-                    </span>
-                    <span>ورود</span>
-                  </a>
-                </li>
-              </ul>
+      <div className="container-fluid">
+        <div className="container d-none d-lg-block">
+          <div className="row justify-content-between my-3">
+            <div className="col-6 border-bottom">
+              <div className="d-flex justify-content-start justify-md-content-end">
+                <ul className="header-list">
+                  <li>
+                    <a href="#">
+                      <span>
+                        <BiGitCompare />
+                      </span>
+                      <span>مقایسه ها</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <MdFavorite />
+                      </span>
+                      <span>علاقه مندی ها</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <BsFillPersonFill />
+                      </span>
+                      <span>ورود</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="col-6">
-            <div className="d-flex justify-content-end justify-md-content-end">
-              <ul className="header-list">
-                <li className="d-flex jusify-content-end">
-                  <a href="#">
-                    <span>
-                      <MdKeyboardArrowDown />
-                    </span>
-                    <span>زبان</span>
-                  </a>
-                </li>
+            <div className="col-6 border-bottom">
+              <div className="d-flex justify-content-end justify-md-content-end">
+                <ul className="header-list">
+                  <li className="d-flex jusify-content-end">
+                    <a href="#">
+                      <span>
+                        <MdKeyboardArrowDown />
+                      </span>
+                      <span>زبان</span>
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="#">
-                    <span>
-                      <BiMobileAlt />
-                    </span>
-                    <span>0921-0800359</span>
-                  </a>
-                </li>
-              </ul>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <BiMobileAlt />
+                      </span>
+                      <span>0921-0800359</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <nav>
         <div className="container">
           <div className="row py-2">
@@ -78,6 +79,28 @@ const Header = () => {
                         <MdKeyboardArrowDown />
                       </span>
                     </a>
+                    <div className="drop-menu">
+                      <ul>
+                        <li>
+                          <a href="#">foashion Home 1</a>
+                        </li>
+                        <li>
+                          <a href="#">foashion Home 2</a>
+                        </li>
+                        <li>
+                          <a href="#">foashion Home 3</a>
+                        </li>
+                        <li>
+                          <a href="#">foashion Home 4</a>
+                        </li>
+                        <li>
+                          <a href="#">foashion Home 5</a>
+                        </li>
+                        <li>
+                          <a href="#">foashion Home 6</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
                     <a href="#">
@@ -102,6 +125,31 @@ const Header = () => {
                         <MdKeyboardArrowDown />
                       </span>
                     </a>
+                    <div className="drop-menu">
+                      <ul>
+                        <li>
+                          <a href="#">در مورد ما</a>
+                        </li>
+                        <li>
+                          <a href="#">ارتباط با ما</a>
+                        </li>
+                        <li>
+                          <a href="#">سوالات متداول</a>
+                        </li>
+                        <li>
+                          <a href="#">error 404</a>
+                        </li>
+                        <li>
+                          <a href="#">ورود</a>
+                        </li>
+                        <li>
+                          <a href="#">ثبت نام</a>
+                        </li>
+                        <li>
+                          <a href="#">شرایط و قوانین</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
                     <a href="#">
@@ -121,14 +169,14 @@ const Header = () => {
                   </li>
                   <li>
                     <a href="#">
-                      <span>
+                      <span className="text-center">
                         <BiSearch />
                       </span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span>
+                      <span className="text-center">
                         <FaShoppingCart />
                       </span>
                     </a>
@@ -137,7 +185,7 @@ const Header = () => {
               </div>
             </div>
             <div className="col-2">
-              <div className="d-flex justify-content-end justify-md-content-end">
+              <div className="d-flex text-center">
                 <Image src={Logo} />
               </div>
             </div>
