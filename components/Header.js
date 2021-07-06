@@ -1,7 +1,11 @@
 import { BsFillPersonFill } from "react-icons/bs";
-import { MdFavorite, MdKeyboardArrowDown } from "react-icons/md";
+import {
+  MdFavorite,
+  MdKeyboardArrowDown,
+  MdKeyboardArrowLeft,
+} from "react-icons/md";
 import { BiGitCompare, BiMobileAlt, BiSearch } from "react-icons/bi";
-import { FaShoppingCart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import Logo from "../public/logo.png";
 const Header = () => {
@@ -158,13 +162,80 @@ const Header = () => {
                         <MdKeyboardArrowDown />
                       </span>
                     </a>
+                    <div className="drop-menu">
+                      <ul>
+                        <li className="position-relative layer-2">
+                          <a href="#">
+                            Grids
+                            <span className="position-absolute arr-left">
+                              <MdKeyboardArrowLeft />
+                            </span>
+                          </a>
+                          <div className="drop-menu-2">
+                            <ul>
+                              <li>
+                                <a href="#">three columns</a>
+                              </li>
+                              <li>
+                                <a href="#">Four columns</a>
+                              </li>
+                              <li>
+                                <a href="#">left sidebar</a>
+                              </li>
+                              <li>
+                                <a href="#">Right sidebar</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li className="position-relative">
+                          <a href="#">
+                            Lists
+                            <span className="position-absolute arr-left">
+                              <MdKeyboardArrowLeft />
+                            </span>
+                          </a>
+                          <div className="drop-menu-2">
+                            <ul>
+                              <li>
+                                <a href="#">left sidebar</a>
+                              </li>
+                              <li>
+                                <a href="#">Right sidebar</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li className="position-relative">
+                          <a href="#">
+                            Single Post
+                            <span className="position-absolute arr-left">
+                              <MdKeyboardArrowLeft />
+                            </span>
+                          </a>
+                          <div className="drop-menu-2">
+                            <ul>
+                              <li>
+                                <a href="#">three columns</a>
+                              </li>
+                              <li>
+                                <a href="#">Four columns</a>
+                              </li>
+                              <li>
+                                <a href="#">left sidebar</a>
+                              </li>
+                              <li>
+                                <a href="#">Right sidebar</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
                     <a href="#">
                       <span>ارتباط با ما</span>
-                      <span>
-                        <MdKeyboardArrowDown />
-                      </span>
                     </a>
                   </li>
                   <li>
@@ -177,7 +248,7 @@ const Header = () => {
                   <li>
                     <a href="#">
                       <span className="text-center">
-                        <FaShoppingCart />
+                        <FiShoppingCart />
                       </span>
                     </a>
                   </li>

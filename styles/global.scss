@@ -29,6 +29,7 @@ a {
 
     transition: color 0.3s;
     color: black;
+    padding: 5px;
     margin: auto 10px;
     &:hover {
       color: $main-red;
@@ -55,12 +56,12 @@ a {
   li > .drop-menu {
     position: absolute;
     right: 0;
-    top: 5rem;
+    top: 0;
     transition: all 0.4s ease-in-out;
     background-color: rgb(216, 216, 216);
     opacity: 0;
     visibility: hidden;
-    min-width: 230px;
+    min-width: 240px;
     text-align: right;
     padding: 8px;
     border-radius: 3px;
@@ -73,4 +74,27 @@ a {
   right: 0;
   width: 100%;
   margin: 6px auto;
+}
+.arr-left {
+  left: 2px;
+}
+.layer-2 {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  &:hover > .drop-menu-2 {
+    opacity: 1;
+    top: 115%;
+    left: 0;
+    visibility: visible;
+  }
+}
+.drop-menu-2 {
+  position: absolute;
+  background-color: rgb(216, 216, 216);
+  right: 125%;
+  top: -50%;
+  transition: all 0.4s ease-in-out;
+  min-width: 200px;
+  text-align: center;
+  visibility: hidden;
 }
