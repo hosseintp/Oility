@@ -142,6 +142,15 @@ a {
 
 .media {
   font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .media li a:hover {
@@ -197,5 +206,32 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 3px;
+}
+
+.footer-ul li span {
+  margin-left: 8px;
+}
+
+.footer-logo {
+  margin: 10px auto;
+}
+
+.border-gray {
+  border-top: 0.01rem solid #797979;
 }
 /*# sourceMappingURL=global.css.map */

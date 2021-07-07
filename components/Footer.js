@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaTelegram,
+  FaHeart,
 } from "react-icons/fa";
 import Footerlogo from "../public/logo-transparent.png";
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-md-6 col-lg-3">
               <ul className="footer-ul">
-                <li>
+                <li className="footer-logo">
                   <Image src={Footerlogo} />
                 </li>
                 <li>
@@ -27,7 +28,7 @@ const Footer = () => {
                   </p>
                 </li>
                 <li>
-                  <ul className="d-flex justify-content-between media">
+                  <ul className="media">
                     <li>
                       <a href="#" className="text-white">
                         <FaInstagram />
@@ -58,7 +59,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-12 col-md-6 col-lg-2">
-              <h6>لینک های مفید</h6>
+              <h5 className="footer-title">لینک های مفید</h5>
               <ul className="footer-ul">
                 <li>
                   <a href="#">درباره ما</a>
@@ -78,7 +79,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-12 col-md-6 col-lg-2">
-              <h6>دسته بندی</h6>
+              <h5 className="footer-title">دسته بندی</h5>
               <ul className="footer-ul">
                 <li>
                   <a href="#">مردان</a>
@@ -98,7 +99,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-12 col-md-6 col-lg-2">
-              <h6>حساب من</h6>
+              <h5 className="footer-title">حساب من</h5>
               <ul className="footer-ul">
                 <li>
                   <a href="#">حساب من</a>
@@ -118,15 +119,13 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
-              <h6>اطلاعات تماس</h6>
+              <h5 className="footer-title">اطلاعات تماس</h5>
               <ul className="footer-ul">
                 <li>
                   <span>
                     <RiMapPin2Fill />
                   </span>
-                  <a href="#">
-                    123 Street, Old Trafford, New South London , UK
-                  </a>
+                  <a href="#">ایران تهران میدان آزادی پلاک یک</a>
                 </li>
                 <li>
                   <span>
@@ -142,6 +141,19 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid dark-bg border-gray">
+        <div className="row py-3">
+          <div className="col-12 text-center">
+            <p>
+              copyright &copy; 2021 with
+              <span className="px-1">
+                <FaHeart />
+              </span>
+              by HosseinTp
+            </p>
           </div>
         </div>
       </div>

@@ -110,6 +110,9 @@ a {
 }
 .media {
   font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   li a:hover {
     color: $main-red;
     cursor: pointer;
@@ -139,9 +142,29 @@ a {
     }
   }
 }
+
 .my-hei {
   height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.footer-ul li {
+  display: flex;
+
+  align-items: flex-start;
+  margin: 5px 3px;
+  span {
+    margin-left: 8px;
+  }
+}
+.footer-logo {
+  margin: 10px auto;
+}
+.border-gray {
+  border-top: 0.01rem solid rgb(121, 121, 121);
 }
