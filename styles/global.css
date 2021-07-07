@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -14,6 +15,12 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   direction: rtl;
+  padding: 0;
+  margin: 0;
+}
+
+* ul {
+  list-style: none;
 }
 
 .header-list,
@@ -84,7 +91,7 @@ a {
   background-color: #d8d8d8;
   opacity: 0;
   visibility: hidden;
-  min-width: 240px;
+  min-width: 200px;
   text-align: right;
   padding: 8px;
   border-radius: 3px;
@@ -123,8 +130,72 @@ a {
   top: -50%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  min-width: 200px;
+  min-width: 170px;
   text-align: center;
   visibility: hidden;
+}
+
+.dark-bg {
+  background-color: #202325;
+  color: white;
+}
+
+.media {
+  font-size: 1.3rem;
+}
+
+.media li a:hover {
+  color: #ff324d;
+  cursor: pointer;
+}
+
+.footer-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-ul li {
+  margin: 6px 0;
+}
+
+.footer-ul li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.footer-ul li a:hover {
+  color: #ff324d;
+}
+
+@media screen and (max-width: 560px) {
+  .footer-ul {
+    text-align: center;
+  }
+  .footer-ul li {
+    margin: 10px auto;
+  }
+}
+
+.my-hei {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=global.css.map */

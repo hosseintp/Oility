@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -16,6 +17,11 @@ a {
 * {
   box-sizing: border-box;
   direction: rtl;
+  padding: 0;
+  margin: 0;
+  ul {
+    list-style: none;
+  }
 }
 .header-list,
 .nav {
@@ -61,7 +67,7 @@ a {
     background-color: rgb(216, 216, 216);
     opacity: 0;
     visibility: hidden;
-    min-width: 240px;
+    min-width: 200px;
     text-align: right;
     padding: 8px;
     border-radius: 3px;
@@ -94,7 +100,48 @@ a {
   right: 125%;
   top: -50%;
   transition: all 0.4s ease-in-out;
-  min-width: 200px;
+  min-width: 170px;
   text-align: center;
   visibility: hidden;
+}
+.dark-bg {
+  background-color: $dark-bg;
+  color: rgb(255, 255, 255);
+}
+.media {
+  font-size: 1.3rem;
+  li a:hover {
+    color: $main-red;
+    cursor: pointer;
+  }
+}
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  li {
+    margin: 6px 0;
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.4s ease-in-out;
+      &:hover {
+        color: $main-red;
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .footer-ul {
+    text-align: center;
+    li {
+      margin: 10px auto;
+    }
+  }
+}
+.my-hei {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
