@@ -1,14 +1,12 @@
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 import "../styles/global.css";
 import "../styles/bootstrap.min.css";
-import Footer from "../components/Footer";
-
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <Layout title="Home Page">
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

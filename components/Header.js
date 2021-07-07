@@ -248,7 +248,7 @@ const Header = () => {
                   <li>
                     <a href="#">
                       <span className="text-center">
-                        <FiShoppingCart />
+                        <FiShoppingCart className="flip" />
                       </span>
                     </a>
                   </li>

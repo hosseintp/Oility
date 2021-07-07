@@ -234,4 +234,9 @@ a {
 .border-gray {
   border-top: 0.01rem solid #797979;
 }
+
+.flip {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
 /*# sourceMappingURL=global.css.map */

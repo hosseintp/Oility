@@ -168,3 +168,6 @@ a {
 .border-gray {
   border-top: 0.01rem solid rgb(121, 121, 121);
 }
+.flip {
+  transform: scale(-1, 1);
+}
