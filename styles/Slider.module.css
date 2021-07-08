@@ -1,0 +1,15 @@
+.slidercontainer {
+  width: 100vw;
+  height: 75vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow-x: hidden;
+}
+.imgholder {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
