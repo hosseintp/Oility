@@ -23,6 +23,7 @@ a {
     list-style: none;
   }
 }
+
 .header-list,
 .nav {
   list-style: none;
@@ -32,10 +33,9 @@ a {
   text-align: center;
   a {
     text-decoration: none;
-
+    display: block;
     transition: color 0.3s;
     color: black;
-    padding: 5px;
     margin: auto 10px;
     &:hover {
       color: $main-red;
@@ -51,27 +51,31 @@ a {
 }
 .nav {
   justify-content: flex-start;
-  li {
+  & > li {
     position: relative;
     &:hover > .drop-menu {
       opacity: 1;
-      top: 115%;
+      top: 50px;
       visibility: visible;
     }
   }
   li > .drop-menu {
     position: absolute;
     right: 0;
-    top: 0;
-    transition: all 0.4s ease-in-out;
+    top: 50%;
+    transition: all 0.2s ease-in-out;
     background-color: rgb(216, 216, 216);
     opacity: 0;
     visibility: hidden;
-    min-width: 200px;
+    min-width: 230px;
     text-align: right;
     padding: 8px;
     border-radius: 3px;
+    z-index: 2;
   }
+}
+.drop-menu {
+  top: 100%;
 }
 .drop-menu li {
   display: inline-block;
@@ -97,8 +101,8 @@ a {
 .drop-menu-2 {
   position: absolute;
   background-color: rgb(216, 216, 216);
-  right: 125%;
-  top: -50%;
+  right: 100%;
+  top: -70%;
   transition: all 0.4s ease-in-out;
   min-width: 170px;
   text-align: center;

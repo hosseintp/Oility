@@ -39,10 +39,10 @@ a {
 .header-list a,
 .nav a {
   text-decoration: none;
+  display: block;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
   color: black;
-  padding: 5px;
   margin: auto 10px;
 }
 
@@ -72,29 +72,34 @@ a {
           justify-content: flex-start;
 }
 
-.nav li {
+.nav > li {
   position: relative;
 }
 
-.nav li:hover > .drop-menu {
+.nav > li:hover > .drop-menu {
   opacity: 1;
-  top: 115%;
+  top: 50px;
   visibility: visible;
 }
 
 .nav li > .drop-menu {
   position: absolute;
   right: 0;
-  top: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  top: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #d8d8d8;
   opacity: 0;
   visibility: hidden;
-  min-width: 200px;
+  min-width: 230px;
   text-align: right;
   padding: 8px;
   border-radius: 3px;
+  z-index: 2;
+}
+
+.drop-menu {
+  top: 100%;
 }
 
 .drop-menu li {
@@ -126,8 +131,8 @@ a {
 .drop-menu-2 {
   position: absolute;
   background-color: #d8d8d8;
-  right: 125%;
-  top: -50%;
+  right: 100%;
+  top: -70%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   min-width: 170px;

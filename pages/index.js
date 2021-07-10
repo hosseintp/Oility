@@ -17,7 +17,9 @@ export default function Home() {
               <div className="content">
                 <h6>فروش فوق العاده</h6>
                 <h3>مجموعه جدید</h3>
-                <a href="#">خرید</a>
+                <a href="#" className={styles.hvr}>
+                  خرید
+                </a>
               </div>
             </div>
           </div>
@@ -29,7 +31,9 @@ export default function Home() {
               <div className="content">
                 <h6>فصل جدید</h6>
                 <h3>فروش 40% تخفیف</h3>
-                <a href="#">خرید</a>
+                <a href="#" className={styles.hvr}>
+                  خرید
+                </a>
               </div>
             </div>
           </div>
