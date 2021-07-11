@@ -48,27 +48,3 @@
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
-.tablist {
-  display: flex;
-  width: 50%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  font-family: "vazir";
-}
-.tablist a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  transition: all 0.3s ease-in-out;
-  line-height: 20px;
-  padding: 5px;
-}
-.tablist a:hover {
-  color: #ff324d;
-}
-.tablist a.active {
-  color: #ff324d;
-  border-bottom: 2px solid rgb(241, 241, 47);
-}

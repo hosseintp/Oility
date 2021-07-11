@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import solo from "../public/images/solo.jpg";
 import per2 from "../public/images/2per.jpg";
+import Tabs from "../components/Tabs";
 
 export default function Home() {
   return (
@@ -37,30 +38,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="row text-center">
-          <div className="col-12 mb-5">
-            <h2 className="text-bold">محصولات فوق العاده</h2>
-          </div>
-          <div className="col-12">
-            <div className={`${styles.tablist} ${styles.border}`}>
-              <div>
-                <a href="" className={`${styles.active}`}>
-                  جدید
-                </a>
-              </div>
-              <div className="tab-item">
-                <a href="#"> بهترین فروش</a>
-              </div>
-              <div className="tab-item">
-                <a href="#">خاص</a>
-              </div>
-              <div className="tab-item">
-                <a href="#">پیشنهاد ویژه</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+      <Tabs />
     </>
   );
 }
