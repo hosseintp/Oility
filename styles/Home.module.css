@@ -48,3 +48,6 @@
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
+.lightbg {
+  background-color: #f4f9fc;
+}
