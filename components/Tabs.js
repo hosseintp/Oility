@@ -2,7 +2,7 @@ import classes from "../styles/Tabs.module.css";
 import { useState } from "react";
 
 const Tabs = () => {
-  const [toggle, setToggle] = useState(1);
+  const [toggle, setToggle] = useState(0);
   const tabs = ["پیشنهاد ویژه", "خاص", "بهترین فروش", "جدید"];
   const toggleTab = (e, index) => {
     e.preventDefault();

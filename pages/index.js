@@ -1,11 +1,21 @@
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import solo from "../public/images/solo.jpg";
 import per2 from "../public/images/2per.jpg";
 import Tabs from "../components/Tabs";
 import girls from "../public/images/girls.png";
+import sally from "../public/images/sally.jpg";
+import { BiSupport } from "react-icons/bi";
+import { GiReturnArrow } from "react-icons/gi";
+import { RiTruckLine } from "react-icons/ri";
 
 export default function Home() {
+  const [value, setvalue] = useState(0);
+  const swipeHandler = (values) => {
+    setvalue((prev) => prev + values);
+    alert(value);
+  };
   return (
     <>
       <div className="container">
@@ -41,7 +51,7 @@ export default function Home() {
         </div>
       </div>
       <Tabs />
-      <div className={`container-fluid ${styles.lightbg}`}>
+      <div className="container-fluid">
         <div className="row align-items-center justify-content-sm-center justify-content-md-between">
           <div className="col-12 col-md-6 mb-sm-5 mb-md-0 text-center text-md-start">
             <span style={{ color: "red", textAlign: "right" }}>
@@ -55,6 +65,80 @@ export default function Home() {
           </div>
           <div className="col-12 col-md-6 mt-5 mt-md-0">
             <Image src={girls} />
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid position-relative">
+        <div
+          className={`${styles.arrow} ${styles.arrow_left}`}
+          onClick={() => swipeHandler(-100)}
+        >
+          ^
+        </div>
+        <div
+          className={`${styles.arrow} ${styles.arrow_right}`}
+          onClick={() => swipeHandler(100)}
+        >
+          ^
+        </div>
+        <div className={`row ${styles.redonbg}`}>
+          <div
+            className="col-12 text-center mb-5"
+            style={{ left: `${value}%` }}
+          >
+            <h3 className="mt-5">گفته های مشتری</h3>
+            <div className={`${styles.content} ${styles.active_content}`}>
+              <p className="w-75 m-auto my-5">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،.
+              </p>
+              <div className={`${styles.client_container}`}>
+                <div className={`${styles.client_info}`}>
+                  <span>Sally Jeferson</span>
+                  <span style={{ color: "red" }}>job</span>
+                </div>
+                <div className={`${styles.client_img}`}>
+                  <Image src={sally} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container py-5">
+        <div className="row text-center align-items-center py-5">
+          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
+            <div className={styles.icon}>
+              <RiTruckLine />
+            </div>
+
+            <h4 className="my-4">حمل رایگان</h4>
+            <p className={styles.caption}>
+              If you are going to use of Lorem, you need to be sure there
+              anything
+            </p>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
+            <div className={styles.icon}>
+              <GiReturnArrow />
+            </div>
+            <h4 className="my-4 text-bold">بازگشت 30 روزه</h4>
+            <p className={styles.caption}>
+              If you are going to use of Lorem, you need to be sure there
+              anything
+            </p>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
+            <div className={styles.icon}>
+              <BiSupport />
+            </div>
+            <h4 className="my-4">پشتیبانی 24 ساعته</h4>
+            <p className={styles.caption}>
+              If you are going to use of Lorem, you need to be sure there
+              anything
+            </p>
           </div>
         </div>
       </div>
