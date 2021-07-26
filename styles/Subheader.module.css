@@ -1,0 +1,15 @@
+.sub_bg {
+  background-color: #f7f8fb;
+}
+.link {
+  color: rgb(26, 25, 25);
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+  padding: 8px;
+}
+.link:hover {
+  color: #ff324d;
+}
+.rotate {
+  transform: rotate(90deg);
+}

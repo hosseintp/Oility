@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import Subscribe from "./Subscribe";
 
 const Layout = ({ children, description, title, keywords }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children, description, title, keywords }) => {
       </Head>
       <Header />
       {children}
+      <Subscribe />
       <Footer />
     </>
   );

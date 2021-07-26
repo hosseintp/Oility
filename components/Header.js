@@ -8,6 +8,7 @@ import { BiGitCompare, BiMobileAlt, BiSearch } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import Logo from "../public/logo.png";
+import Link from "next/link";
 const Header = () => {
   return (
     <header>
@@ -77,16 +78,20 @@ const Header = () => {
               <div className="d-flex jstify-content-center justify-md-content-end">
                 <ul className="nav">
                   <li>
-                    <a href="#">
-                      <span>خانه</span>
-                      <span>
-                        <MdKeyboardArrowDown />
-                      </span>
-                    </a>
+                    <Link href="/">
+                      <a>
+                        <span>خانه</span>
+                        <span>
+                          <MdKeyboardArrowDown />
+                        </span>
+                      </a>
+                    </Link>
                     <div className="drop-menu">
                       <ul>
                         <li>
-                          <a href="#">foashion Home 1</a>
+                          <Link href="/">
+                            <a>foashion Home 1</a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#">foashion Home 2</a>
@@ -132,7 +137,9 @@ const Header = () => {
                     <div className="drop-menu">
                       <ul>
                         <li>
-                          <a href="#">در مورد ما</a>
+                          <Link href="/other/About-us">
+                            <a>در مورد ما</a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#">ارتباط با ما</a>

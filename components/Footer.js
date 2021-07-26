@@ -148,7 +148,7 @@ const Footer = () => {
         <div className="row py-3">
           <div className="col-12 text-center">
             <p>
-              copyright &copy; 2021 with
+              CopyRight &copy; 2021 with
               <span className="px-1">
                 <FaHeart />
               </span>

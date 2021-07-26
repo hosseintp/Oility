@@ -1,0 +1,27 @@
+.box {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(73, 73, 73);
+  text-align: center;
+  padding: 20px;
+  max-width: 350px;
+  height: 200px;
+  border-radius: 3px;
+  border: thin;
+}
+.icon {
+  border-radius: 50%;
+  color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #ff324d;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  justify-content: center;
+}
+.box h3 {
+  padding: 15px auto;
+}

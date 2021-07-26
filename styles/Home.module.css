@@ -107,3 +107,29 @@
   max-width: 80%;
   margin: auto;
 }
+.redbg {
+  background-color: #ff324d;
+}
+.inputy {
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+}
+.form_btn {
+  position: absolute;
+  background-color: #2d3338;
+  transition: all 0.3s ease-in;
+  color: white;
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  padding: auto 10px;
+
+  left: 0;
+}
+.form_btn:hover {
+  background-color: #202325;
+  color: white;
+}

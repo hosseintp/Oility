@@ -6,9 +6,8 @@ import per2 from "../public/images/2per.jpg";
 import Tabs from "../components/Tabs";
 import girls from "../public/images/girls.png";
 import sally from "../public/images/sally.jpg";
-import { BiSupport } from "react-icons/bi";
-import { GiReturnArrow } from "react-icons/gi";
-import { RiTruckLine } from "react-icons/ri";
+import Layout from "../components/Layout";
+import Fetures from "../components/Fetures";
 
 export default function Home() {
   const [value, setvalue] = useState(0);
@@ -17,7 +16,7 @@ export default function Home() {
     alert(value);
   };
   return (
-    <>
+    <Layout title="Oility | Shopping App">
       <div className="container">
         <div className="row my-5">
           <div className="col-12 col-md-6">
@@ -107,41 +106,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container py-5">
-        <div className="row text-center align-items-center py-5">
-          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
-            <div className={styles.icon}>
-              <RiTruckLine />
-            </div>
-
-            <h4 className="my-4">حمل رایگان</h4>
-            <p className={styles.caption}>
-              If you are going to use of Lorem, you need to be sure there
-              anything
-            </p>
-          </div>
-          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
-            <div className={styles.icon}>
-              <GiReturnArrow />
-            </div>
-            <h4 className="my-4 text-bold">بازگشت 30 روزه</h4>
-            <p className={styles.caption}>
-              If you are going to use of Lorem, you need to be sure there
-              anything
-            </p>
-          </div>
-          <div className="col-12 col-md-6 col-lg-4 my-5 my-md-0">
-            <div className={styles.icon}>
-              <BiSupport />
-            </div>
-            <h4 className="my-4">پشتیبانی 24 ساعته</h4>
-            <p className={styles.caption}>
-              If you are going to use of Lorem, you need to be sure there
-              anything
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
+      <Fetures />
+    </Layout>
   );
 }
