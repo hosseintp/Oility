@@ -7,12 +7,12 @@
   height: 200px;
   border-radius: 3px;
   border: thin;
+  margin: auto;
 }
 .icon {
   border-radius: 50%;
   color: #fff;
-  padding: 1rem;
-  overflow: hidden;
+  padding: 5%;
   background-color: #ff324d;
   padding: auto;
   text-align: center;
@@ -23,5 +23,36 @@
   justify-content: center;
 }
 .box h3 {
-  padding: 15px auto;
+  padding: 10px auto;
+  font-size: 1.5rem;
+  margin: 20px auto;
+}
+.box__team {
+  position: relative;
+}
+.box__team_content {
+  text-align: center;
+  margin: auto;
+}
+.box__team_image {
+  position: relative;
+}
+.team__box_socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.team__box_socials a {
+  color: rgb(235, 42, 42);
+}
+.overly {
+  position: absolute;
+  background-color: rgb(23, 214, 81);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
