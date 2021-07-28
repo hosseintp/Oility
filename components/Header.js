@@ -137,12 +137,14 @@ const Header = () => {
                     <div className="drop-menu">
                       <ul>
                         <li>
-                          <Link href="/other/About-us">
+                          <Link href="/other/Aboutus">
                             <a>در مورد ما</a>
                           </Link>
                         </li>
                         <li>
-                          <a href="#">ارتباط با ما</a>
+                          <Link href="/other/Contact-us">
+                            <a>ارتباط با ما</a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#">سوالات متداول</a>

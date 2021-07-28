@@ -27,9 +27,14 @@
   font-size: 1.5rem;
   margin: 20px auto;
 }
-.box__team {
+.team__box {
   position: relative;
+  z-index: 100;
 }
+.team__box:hover.box__team_image {
+  background-color: gray;
+}
+
 .box__team_content {
   text-align: center;
   margin: auto;
@@ -39,20 +44,30 @@
 }
 .team__box_socials {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
-.team__box_socials a {
-  color: rgb(235, 42, 42);
+
+.team__box_socials li a {
+  color: #ff324d;
+  transition: all 0.3s ease-in;
 }
-.overly {
-  position: absolute;
-  background-color: rgb(23, 214, 81);
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.team__box_socials li :hover {
+  background-color: #ff324d;
+  color: #fff;
+}
+.team__box_socials li {
+  margin: auto 8px;
+  font-size: 1.5rem;
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
 }

@@ -18,7 +18,7 @@ import team3 from "../../public/images/team3.jpg";
 import team4 from "../../public/images/team4.jpg";
 import Fetures from "../../components/Fetures";
 import Slider from "../../components/Slider";
-const About = () => {
+const Aboutus = () => {
   return (
     <Layout title="About us">
       <SubHeader title="در مورد ما" />
@@ -107,7 +107,7 @@ const About = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row text-center">
           <div className="col-12 m-auto text-gray text-center">
             <h2 className="fw-bolder">اعضای تیم ما</h2>
             <p className="my-4">
@@ -148,7 +148,6 @@ const About = () => {
             <div className={styles.team__box}>
               <div className={styles.team__box_image}>
                 <Image src={team3} />
-                <div className="overly"></div>
                 <ul className={styles.team__box_socials}>
                   <li>
                     <a href="#">
@@ -239,4 +238,4 @@ const About = () => {
     </Layout>
   );
 };
-export default About;
+export default Aboutus;
