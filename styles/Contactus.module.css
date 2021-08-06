@@ -1,0 +1,55 @@
+.contact__box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__box:hover .icon__holder {
+  color: #fff;
+  background-color: #ff324d;
+}
+.icon__holder {
+  font-size: 40px;
+  color: #ff324d;
+  border: 2px solid #ff324d;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+.content h5 {
+  font-weight: 600;
+  margin: 20px;
+}
+.content p {
+  color: rgb(134, 134, 134);
+}
+@media screen and (max-width: 576px) {
+  .contact__box {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+.title {
+  text-align-last: right;
+}
+.title p {
+  color: rgb(148, 148, 148);
+}
+.title h2 {
+  font-weight: bolder;
+}
+.input {
+  padding: 10px 10px;
+  outline: none;
+  border: 1.5px solid gray;
+  border-radius: 3px;
+  margin: 12px auto;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  display: inline-block;
+}
+.input:focus {
+  border: 2px solid black;
+}
