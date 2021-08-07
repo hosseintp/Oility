@@ -25,6 +25,7 @@
 .content p {
   color: rgb(134, 134, 134);
 }
+
 @media screen and (max-width: 576px) {
   .contact__box {
     max-width: 85%;

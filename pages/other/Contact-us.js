@@ -96,14 +96,9 @@ const contactus = () => {
                   />
                 </div>
                 <a
-                  className={classes.hvr}
+                  className={`${classes.hvr} ${classes.submit}`}
                   type="submit"
                   onClick={(e) => submitHandler(e)}
-                  style={{
-                    display: "inline",
-                    textAlign: "center",
-                    width: "30%",
-                  }}
                 >
                   ارسال پیام
                 </a>
@@ -111,9 +106,7 @@ const contactus = () => {
             </form>
           </div>
 
-          <div className="col-12 col-md-6">
-            <Maps />
-          </div>
+          <div className="col-12 col-md-6">{/* <Maps /> */}</div>
         </div>
       </div>
     </Layout>

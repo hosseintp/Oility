@@ -133,3 +133,14 @@
   background-color: #202325;
   color: white;
 }
+.submit {
+  width: auto;
+  margin-right: 10px;
+}
+@media screen and (max-width: 576px) {
+  .submit {
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+}

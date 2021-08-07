@@ -50,14 +50,19 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 8px auto;
 }
 
 .header-list a,
 .nav a {
   text-decoration: none;
   display: block;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  position: relative;
+  padding: 6px;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
   color: black;
   margin: auto 10px;
 }
@@ -77,9 +82,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 8px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .nav {
@@ -93,8 +100,8 @@ a {
 }
 
 .nav > li:hover > .drop-menu {
+  top: 100%;
   opacity: 1;
-  top: 50px;
   visibility: visible;
 }
 
@@ -111,7 +118,6 @@ a {
   visibility: hidden;
   min-width: 230px;
   text-align: right;
-  padding: 8px;
   border-radius: 3px;
   z-index: 2;
 }
@@ -126,7 +132,7 @@ a {
   position: relative;
   right: 0;
   width: 100%;
-  margin: 6px auto;
+  margin: 3px auto;
 }
 
 .arr-left {

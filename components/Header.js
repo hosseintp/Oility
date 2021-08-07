@@ -147,7 +147,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="/other/sam">
+                          <Link href="/other/Faq">
                             <a>سوالات متداول</a>
                           </Link>
                         </li>
