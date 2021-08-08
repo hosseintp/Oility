@@ -153,7 +153,9 @@ const Header = () => {
                         </li>
 
                         <li>
-                          <a href="#">error 404</a>
+                          <Link href="/other/Not-found">
+                            <a>error 404</a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#">ورود</a>
