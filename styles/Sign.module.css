@@ -1,0 +1,135 @@
+.form_container {
+  padding: 25px;
+  min-height: 600px;
+  max-width: 500px;
+  flex-direction: column;
+
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.form_container h3 {
+  padding-right: 28px;
+  text-align: right;
+}
+.form_body {
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox {
+  margin: auto 5px;
+}
+@media screen and (max-width: 576px) {
+  .form_container {
+    max-width: 90%;
+  }
+}
+.inputs {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+input.inputs:focus ::placeholder {
+  color: black;
+}
+.checkbox {
+  color: red;
+}
+.hvr {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.75rem 3.5rem;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border: 2px solid #ff324d;
+}
+.hvr:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff324d;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr:hover,
+.hvr:focus,
+.hvr:active {
+  color: white;
+}
+.hvr:hover:before,
+.hvr:focus:before,
+.hvr:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.inputs:focus::placeholder {
+  color: black;
+}
+.btn {
+  cursor: progress;
+  transition: all 0.5s ease-in-out;
+}
+.error_message {
+  color: #ff324d;
+  text-align: right;
+  margin-top: 5px;
+  padding-right: 10px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.or {
+  position: relative;
+  margin: 20px 0;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  border-top: 2px solid #ddd;
+  transform: translateY(-50%);
+}
+.or span {
+  position: relative;
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.last {
+  color: gray;
+}
+.last a {
+  color: gray;
+  margin: 0 3px;
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+}

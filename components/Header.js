@@ -157,11 +157,14 @@ const Header = () => {
                             <a>error 404</a>
                           </Link>
                         </li>
+
                         <li>
-                          <a href="#">ورود</a>
+                          <Link href="/other/Sign-up">
+                            <a>ثبت نام</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">ثبت نام</a>
+                          <a href="#">ورود</a>
                         </li>
                         <li>
                           <a href="#">شرایط و قوانین</a>
