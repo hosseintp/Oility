@@ -8,8 +8,11 @@ import { BiGitCompare, BiMobileAlt, BiSearch } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import Logo from "../public/logo.png";
+import Router from "next/router";
 import Link from "next/link";
+
 const Header = () => {
+  const location = () => {};
   return (
     <header>
       <div className="container-fluid">
@@ -72,7 +75,7 @@ const Header = () => {
         </div>
       </div>
       <nav>
-        <div className="container">
+        <div className="container d-none d-lg-block">
           <div className="row py-2">
             <div className="col-10">
               <div className="d-flex jstify-content-center justify-md-content-end">
@@ -164,7 +167,9 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <a href="#">ورود</a>
+                          <Link href="/other/Login">
+                            <a>ورود</a>
+                          </Link>
                         </li>
                         <li>
                           <a href="#">شرایط و قوانین</a>

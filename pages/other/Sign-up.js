@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import SubHeader from "../../components/SubHeader";
 import Styles from "../../styles/Sign.module.css";
-import { useFormik, Formik } from "formik";
+import { useFormik } from "formik";
 import Link from "next/link";
+import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 const validate = (values) => {
   const errors = {};
 
@@ -166,7 +167,7 @@ const Signup = () => {
               ) : null}
               <button
                 type="submit"
-                className={`${Styles.hvr} btn`}
+                className={`${Styles.hvr} btn w-75`}
                 disabled={on}
               >
                 ثبت نام
@@ -176,6 +177,23 @@ const Signup = () => {
               <div className={Styles.or}>
                 <span>یا</span>
               </div>
+            </div>
+            <div className="col-12 my-4">
+              <div className="media d-flex justify-content-around">
+                <span className="bg-danger text-white p-2">
+                  <span className="p-2">
+                    <FaGooglePlus />
+                  </span>
+                  Google
+                </span>
+                <span className="bg-primary text-white p-2">
+                  <span className="p-2">
+                    <FaFacebook />
+                  </span>
+                  FaceBook
+                </span>
+              </div>
+              <div className="media"></div>
             </div>
             <div className="col-12">
               <span className={Styles.last}>
