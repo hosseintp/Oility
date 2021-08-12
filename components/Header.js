@@ -38,12 +38,14 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <span>
-                        <BsFillPersonFill />
-                      </span>
-                      <span>ورود</span>
-                    </a>
+                    <Link href="/other/Login">
+                      <a>
+                        <span>
+                          <BsFillPersonFill />
+                        </span>
+                        <span>ورود</span>
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -258,9 +260,11 @@ const Header = () => {
                     </div>
                   </li>
                   <li>
-                    <a href="#">
-                      <span>ارتباط با ما</span>
-                    </a>
+                    <Link href="other/Contact-us">
+                      <a>
+                        <span>ارتباط با ما</span>
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#">

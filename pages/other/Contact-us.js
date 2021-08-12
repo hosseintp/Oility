@@ -95,8 +95,15 @@ const contactus = () => {
                     placeholder="موضوع را وارد کنید *"
                   />
                 </div>
+                <div className="col-12">
+                  <textarea
+                    placeholder="متن پیام"
+                    rows="4"
+                    className={styles.input}
+                  ></textarea>
+                </div>
                 <a
-                  className={`${classes.hvr} ${classes.submit}`}
+                  className={`${classes.hvr} ${classes.submit} w-75 text-center m-auto`}
                   type="submit"
                   onClick={(e) => submitHandler(e)}
                 >

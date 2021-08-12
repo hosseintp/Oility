@@ -96,7 +96,7 @@ export default function Login() {
               <span className={Styles.last}>
                 در حال حاضر حسابی ندارید؟
                 <span>
-                  <Link href="/other/ُSign-up">
+                  <Link href="/other/Sign-up">
                     <a>حالا حساب بسازید</a>
                   </Link>
                 </span>

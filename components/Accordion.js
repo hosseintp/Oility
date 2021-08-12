@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/Accordion.module.css";
 
 const Accordion = () => {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(null);
   const questions = [
     {
       question: "سوال شماره یک",
