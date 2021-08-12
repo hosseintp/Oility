@@ -172,7 +172,9 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <a href="#">شرایط و قوانین</a>
+                          <Link href="/other/Conditions">
+                            <a>شرایط وظوابط</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>

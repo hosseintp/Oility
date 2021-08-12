@@ -3,7 +3,7 @@ import styles from "../styles/Subheader.module.css";
 const SubHeader = ({ title }) => {
   return (
     <div className={`container-fluid py-5 ${styles.sub_bg}`}>
-      <div className="container">
+      <div className="container px-4">
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
             <h2 className="pr-2">{title}</h2>
