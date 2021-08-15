@@ -226,3 +226,9 @@ a {
   right: 20px;
   transform: translateY(-50%);
 }
+.btn.show {
+  opacity: 1;
+}
+.btn.hide {
+  opacity: 0;
+}

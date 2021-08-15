@@ -4,14 +4,15 @@ import solo from "../public/images/solo.jpg";
 import per2 from "../public/images/2per.jpg";
 import Tabs from "../components/Tabs";
 import girls from "../public/images/girls.png";
-
 import Layout from "../components/Layout";
 import Fetures from "../components/Fetures";
 import Slider from "../components/Slider";
+import Scroll from "../components/Scroll";
 
 export default function Home() {
   return (
     <Layout title="Oility | Shopping App">
+      <Scroll showBelow={350} />
       <div className="container">
         <div className="row my-5">
           <div className="col-12 col-md-6">
