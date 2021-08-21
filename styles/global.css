@@ -3,10 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("fonts/Vazir.eot");
-  src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Vazir.woff2") format("woff2"),
-    url("fonts/Vazir.woff") format("woff"),
-    url("fonts/Vazir.ttf") format("truetype");
+  src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"), url("fonts/Vazir.woff2") format("woff2"), url("fonts/Vazir.woff") format("woff"), url("fonts/Vazir.ttf") format("truetype");
 }
 
 @font-face {
@@ -14,10 +11,7 @@
   font-style: normal;
   font-weight: bold;
   src: url("fonts/Vazir-Bold.eot");
-  src: url("fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Vazir-Bold.woff2") format("woff2"),
-    url("fonts/Vazir-Bold.woff") format("woff"),
-    url("fonts/Vazir-Bold.ttf") format("truetype");
+  src: url("fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Vazir-Bold.woff2") format("woff2"), url("fonts/Vazir-Bold.woff") format("woff"), url("fonts/Vazir-Bold.ttf") format("truetype");
 }
 
 html,
@@ -25,7 +19,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  position: relative;
 }
 
 a {
@@ -35,7 +28,7 @@ a {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "vazir", Arial, sans-serif;
   direction: rtl;
   padding: 0;
@@ -54,8 +47,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding: 8px auto;
 }
@@ -91,15 +84,15 @@ a {
   display: flex;
   padding: 8px auto;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
 .nav {
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .nav > li {
@@ -120,7 +113,7 @@ a {
   transition: all 0.2s ease-in-out;
   background-color: white;
   -webkit-box-shadow: 0px 1px 5px black;
-  box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
   opacity: 0;
   visibility: hidden;
   min-width: 230px;
@@ -182,11 +175,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .media li a:hover {
@@ -200,11 +193,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-ul li {
@@ -237,11 +230,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-title {
@@ -254,8 +247,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 5px 3px;
 }
 
@@ -273,7 +266,7 @@ a {
 
 .flip {
   -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 
 .img-holder {
@@ -292,7 +285,7 @@ a {
 
 .cardy:hover .img-holder {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content {
@@ -300,6 +293,127 @@ a {
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.btn.show {
+  opacity: 1;
+}
+
+.btn.hide {
+  opacity: 0;
+}
+
+.search-container {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  color: white;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.search-container input {
+  border: none;
+  height: auto;
+  background-color: transparent;
+  border-bottom: 3px solid white;
+  padding: 10px 0;
+  font-size: large;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container input::-webkit-input-placeholder {
+  color: white;
+}
+
+.search-container input:-ms-input-placeholder {
+  color: white;
+}
+
+.search-container input::-ms-input-placeholder {
+  color: white;
+}
+
+.search-container input::placeholder {
+  color: white;
+}
+
+.search-content {
+  width: 100%;
+}
+
+.search-content .close {
+  position: absolute;
+  top: -35px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in;
+}
+
+.search-content .close:hover {
+  color: #c5c5c5;
+}
+
+.search-wrapper {
+  width: 75%;
+  position: relative;
+}
+
+.search-submit {
+  position: absolute;
+  background-color: transparent;
+  left: 10px;
+  color: white;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  font-size: 1.6rem;
+}
+
+.search-bar--enter {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.search-bar--enter-active {
+  opacity: 0.7;
+  -webkit-transition: all 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.search-bar--enter-done {
+  opacity: 0.7;
+}
+
+.search-bar--exit-active {
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 /*# sourceMappingURL=global.css.map */
